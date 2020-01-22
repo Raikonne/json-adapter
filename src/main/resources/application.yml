@@ -1,0 +1,15 @@
+logging:
+  level:
+    com.json.adapter: INFO
+
+inbound:
+  host: 127.0.0.1
+  port: 8282
+
+rabbitmq:
+  virtualhost: /feedme
+  host.1: localhost
+  port.1: 5672
+  addresses: ${rabbitmq.host.1}:${rabbitmq.port.1}
+  username: rabbitmq
+  password: rabbitmq

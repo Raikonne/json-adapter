@@ -1,0 +1,13 @@
+{
+  "msgId": 44,
+  "type": "market",
+  "body": {
+    "displayed": false,
+    "name": "Both Teams To Score",
+    "eventId": "ff9c13fd-b190-45be-baa3-e63237371a7d",
+    "suspended": true,
+    "marketId": "2ec875f4-4ac7-4f12-bc9e-9cd781dadc0b"
+  },
+  "operation": "create",
+  "timestamp": 1579614441765
+}

@@ -1,0 +1,51 @@
+version: '2'
+services:
+#  jsonadapter:
+#    image: json-adapter
+#    ports:
+#      - "8180:8180"
+#    depends_on:
+#      - rabbitmq
+#      - provider
+#    networks:
+#      - ext-network
+#  packetpublisher:
+#    image: packet-publisher
+#    ports:
+#      - "8280:8280"
+#    depends_on:
+#      - rabbitmq
+#      - mongo
+#      - jsonadapter
+#    networks:
+#      - ext-network
+  mongo:
+    image: mongo
+    ports:
+      - "27017:27017"
+    environment:
+      - MONGO_DATA_DIR=/test
+      - MONGO_LOG_DIR=/dev/null
+    networks:
+      - ext-network
+  rabbitmq:
+      image: rabbitmq:3-management
+      ports:
+        - "15672:15672"
+        - "5672:5672"
+      environment:
+        RABBITMQ_DEFAULT_PASS: "rabbitmq"
+        RABBITMQ_DEFAULT_USER: "rabbitmq"
+        RABBITMQ_DEFAULT_VHOST: "/feedme"
+      networks:
+        - ext-network
+  provider:
+      image: tsgtechtest/provider:1.0.0
+      ports:
+        - "8181:8181"
+        - "8282:8282"
+      networks:
+        - ext-network
+networks:
+  ext-network:
+    driver: bridge

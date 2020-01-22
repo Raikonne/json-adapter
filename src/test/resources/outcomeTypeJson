@@ -1,0 +1,14 @@
+{
+  "msgId": 46,
+  "type": "outcome",
+  "body": {
+    "displayed": false,
+    "price": "6/4",
+    "name": "No",
+    "outcomeId": "b22376fc-a3ab-4d8f-ae2c-ccb77c4fe00f",
+    "suspended": true,
+    "marketId": "2ec875f4-4ac7-4f12-bc9e-9cd781dadc0b"
+  },
+  "operation": "create",
+  "timestamp": 1579614441765
+}

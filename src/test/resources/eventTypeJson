@@ -1,0 +1,15 @@
+{
+  "msgId": 138,
+  "type": "event",
+  "body": {
+    "displayed": false,
+    "subCategory": "Sky Bet League Two",
+    "name": "Colchester vs Notts County",
+    "eventId": "febb5861-18e2-426d-a9c5-5cf8f897bf78",
+    "suspended": true,
+    "category": "Football",
+    "startTime": "1579614502853"
+  },
+  "operation": "create",
+  "timestamp": 1579614452166
+}

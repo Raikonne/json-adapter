@@ -1,0 +1,14 @@
+{
+  "msgId": 3545,
+  "type": "outcome",
+  "body": {
+    "displayed": true,
+    "price": "8/13",
+    "name": "Draw",
+    "outcomeId": "5c4ea36b-6d90-4cd0-97a1-6fe98a9e12c0",
+    "suspended": false,
+    "marketId": "4bd62b28-5584-485d-9000-61b66c3cf171"
+  },
+  "operation": "update",
+  "timestamp": 1579620460371
+}
